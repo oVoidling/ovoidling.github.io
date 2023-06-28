@@ -1,0 +1,85 @@
+<html>
+    <head>  
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+      </head>
+
+    <body>
+        <a-scene>
+
+        <a-sky color="#EBEBEB"></a-sky>
+
+        <a-plane color="black" position="0 0 0" rotation="-90 0 0" width="20" height="10">
+        
+        </a-plane>
+        <!--Antena-->    
+        <a-circle position="0 9.15 0" color="yellow" radius="0.8" material="side: double">
+        <a-cylinder color="#757575" height="1.5" radius="0.05" position="0 1 -1"
+                    animation="property: position; from:-0.2 1 -0.1;to: 0.2 1 -0.1;dir:alternate;loop: true; dur: 2000;"></a-cylinder>
+        <a-sphere color="#ef5350" radius="0.3" position="0 1 -1" 
+                  animation="property: position; from:-0.2 1.5 -0.1;to: 0.2 1.5 -0.1;dir:alternate;loop: true; dur: 2000;"></a-sphere>
+
+        <!--Head-->   
+        <a-box color="#00FFFF" position="0 -1 0" width="3.2" height="2.2">
+
+        </a-box>
+        <!--Eyes-->
+        <a-sphere color="white" position="-0.7 -0.6 0.5" radius="0.6"></a-sphere>
+        <a-sphere color="white" position="0.7 -0.6 0.5" radius="0.6"></a-sphere>
+        <a-sphere color="black" position="0.65 -0.4 1" radius="0.15"
+                  animation="property: position; from:0.7 -0.2 1;to: 0.7 -0.7 1;dir:alternate;loop: true; dur: 2000;"></a-sphere>
+        <a-sphere color="black" position="-0.65 -0.4 1" radius="0.15"
+                  animation="property: position; from:-0.7 -0.2 1;to: -0.7 -0.7 1;dir:alternate;loop: true; dur: 2000;"></a-sphere>
+        <!--Mouth-->          
+        <a-torus color="yellow" rotation=" 135 0 0" position="0 -1 0" radius="1" radius-tubular="0.02" segments-tubular="1000"></a-torus>
+
+        <!--NEck-->
+        <a-box color="orange" position="0 -2.3 0" height="0.3w" width="2"></a-box>
+
+        <!--Body-->
+        <a-box color="#00FFFF" position="0 -4.5 0" height="4" width ="4"></a-box>
+
+        <!--IDK the button thingy from the image given?-->
+        <a-box color="#e3a44e" position="-1 -3.3 0.1"></a-box>
+        <a-box color="#e3d830" position="0.1 -3.3 0.1"></a-box>
+        <a-box color="#e3e330" position="1.2 -3.3 0.1"></a-box>
+
+        <a-box color="#e3e330" position="-1 -4.4 0.1"></a-box>
+        <a-box color="#e3a44e" position="0.1 -4.4 0.1"></a-box>
+        <a-box color="#e3d830" position="1.2 -4.4 0.1"></a-box>
+        
+        <a-box color="#e3d830" position="-1 -5.5 0.1"></a-box>
+        <a-box color="#e3e330" position="0.1 -5.5 0.1"></a-box>
+        <a-box color="#e3a44e" position="1.2 -5.5 0.1"></a-box>
+
+        <!--Arms-->
+        <a-cylinder color="gray" position="-2.3 -4.2 0" rotation="30 90 0" radius="0.4" height="2.43"></a-cylinder>
+        <a-cylinder color="gray" position="-3.8 -4.3 0" rotation="-50 90 0" radius="0.4" height="2.43"></a-cylinder>
+        <a-sphere color="#ef5350" position="-2.8 -5 0" radius="0.5"></a-sphere>
+        <a-sphere color="#ef5350" position="-4.8 -3.3 0" radius="0.7"></a-sphere>
+
+        <a-cylinder color="gray" position="2.3 -4.2 -0" rotation="-30 90 0" radius="0.4" height="2.43"></a-cylinder>
+        <a-cylinder color="gray" position="3.8 -4.3 0" rotation="50 90 0" radius="0.4" height="2.43"></a-cylinder>
+        <a-sphere color="#ef5350" position="2.8 -5 0" radius="0.5"></a-sphere>
+        <a-sphere color="#ef5350" position="4.8 -3.3 0" radius="0.7"></a-sphere>
+
+        <!--Legz-->
+        <a-cylinder position="-1 -7.7 0.1" height="2.4" color="gray" radius="0.455"></a-cylinder>
+        <a-cylinder position="1 -7.7 0.1" height="2.4" color="gray" radius="0.455"></a-cylinder>
+
+        <a-sphere position="-1 -9.7 0.1" radius="1" color="#ef5350"></a-sphere>
+        <a-sphere position="1 -9.7 0.1" radius="1" color="#ef5350"></a-sphere>
+
+        <a-torus color="white" rotation=" 90 0 0" position="-1 -7 0.1" radius="0.5" radius-tubular="0.02" segments-tubular="1000"></a-torus>
+        <a-torus color="white" rotation=" 90 0 0" position="-1 -7.5 0.1" radius="0.5" radius-tubular="0.02" segments-tubular="1000"></a-torus>
+        <a-torus color="white" rotation=" 90 0 0" position="-1 -8 0.1" radius="0.5" radius-tubular="0.02" segments-tubular="1000"></a-torus>
+        
+        <a-torus color="white" rotation=" 90 0 0" position="1 -7 0.1" radius="0.5" radius-tubular="0.02" segments-tubular="1000"></a-torus>
+        <a-torus color="white" rotation=" 90 0 0" position="1 -7.5 0.1" radius="0.5" radius-tubular="0.02" segments-tubular="1000"></a-torus>
+        <a-torus color="white" rotation=" 90 0 0" position="1 -8 0.1" radius="0.5" radius-tubular="0.02" segments-tubular="1000"></a-torus>
+
+
+        <a-camera look-controls-enabled wasd-controls-enabled position="0 -4 15">
+        </a-camera>
+
+        </a-scene>
+    </body>
